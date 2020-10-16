@@ -25,9 +25,12 @@ namespace Hotel.Models
         public string Passport_data { get; set; }
         public DbSet<Rooms> ID_Room { get; set; }
         public DbSet<Employee> ID_Employee { get; set; }
-        public DbSet<Services> ID_Service1 { get; set; }
-        public DbSet<Services> ID_Service2 { get; set; }
-        public DbSet<Services> ID_Service3 { get; set; }
+        public long? Service1ID { get; set; }
+        public DbSet<Services> Service1 { get; set; }
+        public long? Service2ID { get; set; }
+        public DbSet<Services> Service2 { get; set; }
+        public long? Service3ID { get; set; }
+        public DbSet<Services> Service3 { get; set; }
 
     }
 }
